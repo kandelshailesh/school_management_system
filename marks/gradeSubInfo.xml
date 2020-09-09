@@ -1,0 +1,133 @@
+<DOCUMENT>
+
+  <four>
+    <sub>English</sub>
+    <sub>Math</sub>
+    <sub>Science</sub>
+    <sub>Social</sub>
+    <sub>Nepali</sub>
+
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+  </four>
+
+  <five>
+    <sub>English</sub>
+    <sub>Math</sub>
+    <sub>Science</sub>
+    <sub>Social</sub>
+    <sub>Computer</sub>
+    <sub>Nepali</sub>
+
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>50</fm>
+    <fm>100</fm>
+
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>16</pm>
+    <pm>32</pm>
+  </five>
+
+  <six>
+    <sub>English</sub>
+    <sub>Math</sub>
+    <sub>Science</sub>
+    <sub>Social</sub>
+    <sub>EHP</sub>
+    <sub>Computer</sub>
+    <sub>Nepali</sub>
+
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>50</fm>
+    <fm>100</fm>
+
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>16</pm>
+    <pm>32</pm>
+  </six>
+
+  <seven>
+    <sub>English</sub>
+    <sub>Math</sub>
+    <sub>Science</sub>
+    <sub>Social</sub>
+    <sub>EHP</sub>
+    <sub>Computer</sub>
+    <sub>Nepali</sub>
+
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+  </seven>
+
+  <eight>
+    <sub>English</sub>
+    <sub>Math</sub>
+    <sub>Science</sub>
+    <sub>Social</sub>
+    <sub>EHP</sub>
+    <sub>Account</sub>
+    <sub>Computer</sub>
+    <sub>Optional Maths</sub>
+
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+    <fm>100</fm>
+
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+    <pm>32</pm>
+  </eight>
+
+</DOCUMENT>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-12-16T07:19:56.812500Z"
+   url="file:///c:/miron/svn/tt/sql"
+   last-author="zurgael"
+   kind="dir"
+   uuid="966a0674-a2ef-8f40-b113-34dbcaacc105"
+   revision="4"/>
+<entry
+   committed-rev="1"
+   name="createdb.sql"
+   text-time="2005-12-16T07:36:41.906250Z"
+   committed-date="2005-12-16T07:19:56.812500Z"
+   checksum="adde23bfc0a0c6565d5f277a02d9a679"
+   last-author="zurgael"
+   kind="file"
+   prop-time="2005-12-16T07:36:41.906250Z"/>
+</wc-entries>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="4"
+   name=""
+   committed-date="2005-12-16T08:40:22.796875Z"
+   url="file:///c:/miron/svn/tt"
+   last-author="zurgael"
+   kind="dir"
+   uuid="966a0674-a2ef-8f40-b113-34dbcaacc105"
+   revision="4"/>
+<entry
+   name="sql"
+   kind="dir"/>
+<entry
+   name="php"
+   kind="dir"/>
+<entry
+   committed-rev="6"
+   name="NOTES"
+   text-time="2005-12-16T12:36:48.250000Z"
+   committed-date="2005-12-16T22:18:22.937500Z"
+   checksum="a0f984e64a4aef0e612b858688b448f2"
+   last-author="zurgael"
+   kind="file"
+   prop-time="2005-12-16T07:36:42.156250Z"
+   revision="6"/>
+<entry
+   name="js"
+   kind="dir"/>
+</wc-entries>

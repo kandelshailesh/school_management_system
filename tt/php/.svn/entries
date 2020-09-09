@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="4"
+   name=""
+   committed-date="2005-12-16T08:40:22.796875Z"
+   url="file:///c:/miron/svn/tt/php"
+   last-author="zurgael"
+   kind="dir"
+   uuid="966a0674-a2ef-8f40-b113-34dbcaacc105"
+   revision="4"/>
+<entry
+   committed-rev="1"
+   name="generate.php"
+   text-time="2005-12-16T07:36:42.046875Z"
+   committed-date="2005-12-16T07:19:56.812500Z"
+   checksum="a0cf818bf962a2894b9e1935659173c8"
+   last-author="zurgael"
+   kind="file"
+   prop-time="2005-12-16T07:36:41.953125Z"/>
+<entry
+   committed-rev="1"
+   name="tweak.php"
+   text-time="2005-12-16T07:36:42.046875Z"
+   committed-date="2005-12-16T07:19:56.812500Z"
+   checksum="d36bef115a9c30003447300520c4daa7"
+   last-author="zurgael"
+   kind="file"
+   prop-time="2005-12-16T07:36:41.968750Z"/>
+<entry
+   committed-rev="1"
+   name="editres.php"
+   text-time="2005-12-16T07:36:42.062500Z"
+   committed-date="2005-12-16T07:19:56.812500Z"
+   checksum="0994313f6b21eeebd3d88f0268651bae"
+   last-author="zurgael"
+   kind="file"
+   prop-time="2005-12-16T07:36:41.968750Z"/>
+<entry
+   committed-rev="1"
+   name="manage_tt.php"
+   text-time="2005-12-16T07:36:42.078125Z"
+   committed-date="2005-12-16T07:19:56.812500Z"
+   checksum="dc6f28975868099552ebd02c0b86e60d"
+   last-author="zurgael"
+   kind="file"
+   prop-time="2005-12-16T07:36:41.984375Z"/>
+<entry
+   committed-rev="1"
+   name="newtimetable.php"
+   text-time="2005-12-16T07:36:42.078125Z"
+   committed-date="2005-12-16T07:19:56.812500Z"
+   checksum="e80f4cc76cd4b7ea99bd0e969b7af8e3"
+   last-author="zurgael"
+   kind="file"
+   prop-time="2005-12-16T07:36:41.984375Z"/>
+<entry
+   committed-rev="1"
+   name="actgen.php"
+   text-time="2005-12-16T07:36:42.093750Z"
+   committed-date="2005-12-16T07:19:56.812500Z"
+   checksum="cc354952bb82f7fec41c1c37b1538e35"
+   last-author="zurgael"
+   kind="file"
+   prop-time="2005-12-16T07:36:42.000000Z"/>
+<entry
+   committed-rev="1"
+   name="newresource.php"
+   text-time="2005-12-16T07:36:42.109375Z"
+   committed-date="2005-12-16T07:19:56.812500Z"
+   checksum="274842e5dcdac3520d91cc519373d948"
+   last-author="zurgael"
+   kind="file"
+   prop-time="2005-12-16T07:36:42.000000Z"/>
+<entry
+   committed-rev="1"
+   name="resgen.php"
+   text-time="2005-12-16T07:36:42.109375Z"
+   committed-date="2005-12-16T07:19:56.812500Z"
+   checksum="706b68df96e52c52a46087019d746a56"
+   last-author="zurgael"
+   kind="file"
+   prop-time="2005-12-16T07:36:42.015625Z"/>
+<entry
+   committed-rev="4"
+   name="signup.php"
+   text-time="2005-12-16T08:34:31.875000Z"
+   committed-date="2005-12-16T08:40:22.796875Z"
+   checksum="893c0785fe52c583dde5ab90109e10f3"
+   last-author="zurgael"
+   kind="file"/>
+<entry
+   committed-rev="1"
+   name="newactivity.php"
+   text-time="2005-12-16T07:36:42.125000Z"
+   committed-date="2005-12-16T07:19:56.812500Z"
+   checksum="1fbe2a4685b6c91d84e9da6cdd630c10"
+   last-author="zurgael"
+   kind="file"
+   prop-time="2005-12-16T07:36:42.015625Z"/>
+<entry
+   committed-rev="5"
+   name="index.php"
+   text-time="2005-12-16T14:33:03.203125Z"
+   committed-date="2005-12-16T08:54:09.234375Z"
+   checksum="67fb80eda7522dcb2287c4a4054ba4f7"
+   last-author="zurgael"
+   kind="file"
+   prop-time="2005-12-16T07:36:42.015625Z"
+   revision="5"/>
+<entry
+   committed-rev="1"
+   name="common.php"
+   text-time="2005-12-16T07:36:42.140625Z"
+   committed-date="2005-12-16T07:19:56.812500Z"
+   checksum="83cdd24de570658fd24fe194188fa0dd"
+   last-author="zurgael"
+   kind="file"
+   prop-time="2005-12-16T07:36:42.031250Z"/>
+</wc-entries>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-12-16T07:19:56.812500Z"
+   url="file:///c:/miron/svn/tt/js"
+   last-author="zurgael"
+   kind="dir"
+   uuid="966a0674-a2ef-8f40-b113-34dbcaacc105"
+   revision="4"/>
+<entry
+   committed-rev="1"
+   name="res_act_mng.js"
+   text-time="2005-12-16T07:36:42.234375Z"
+   committed-date="2005-12-16T07:19:56.812500Z"
+   checksum="17b499937aae381b0a5e13aa8c8ed24f"
+   last-author="zurgael"
+   kind="file"
+   prop-time="2005-12-16T07:36:42.218750Z"/>
+</wc-entries>

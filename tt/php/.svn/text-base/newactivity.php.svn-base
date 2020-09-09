@@ -1,0 +1,157 @@
+<?php session_start(); ?>
+<script language="javascript" src="../js/res_act_mng.js">
+</script>
+<script language="javascript">
+function confirm_delete_activity(id)
+{
+    msg = "Are you sure you want to delete activity?";
+    if (confirm(msg))
+    {
+        location = "newactivity.php?delete="+id;
+    }
+}
+</script>
+<?php
+include_once("common.php");
+
+if (isset($_GET['delete']))
+{
+    $res_id = $_GET['delete'];
+    $conn = connect_to_db();
+    $query = "DELETE FROM ACTIVITIES WHERE ID=$res_id";
+    mysql_query($query)
+        or die("Can't delete resource");
+    echo "deleted resource";
+    print<<<_H
+<p><a href="manage_tt.php">Timetable {$_SESSION['tt_name']}</a></p>
+<p><a href="index.php">Main page</a></p>
+_H;
+    exit();
+}
+// page entry point
+if (isset($_POST['add']))
+{
+    $conn = connect_to_db();
+    $act_type = $_POST['type'];
+    $class_name = $_POST['class'];
+    $prof_name = $_POST['prof'];
+    $query = "SELECT R1.ID AS CLASS_ID, R2.ID AS PROF_ID " .
+        "FROM RESOURCES R1, RESOURCES R2 " .
+        "WHERE R1.NAME='$class_name' AND R2.NAME='$prof_name'";
+    echo "<p>$query</p>";
+    $result = mysql_query($query)
+        or die("Can't get resource names!");
+    $row = mysql_fetch_array($result, MYSQL_ASSOC);
+    $class_id = $row['CLASS_ID'];
+    $prof_id = $row['PROF_ID'];
+    if (isset($_POST['edit']))
+    {
+        $act_id = $_POST['edit'];
+        $query = "UPDATE ACTIVITIES " .
+            "SET TYPE='$act_type', CLASS_ID=$class_id, " .
+            "PROF_ID=$prof_id " .
+            "WHERE ID=$act_id";
+    }
+    else
+    {
+        $query = "INSERT INTO ACTIVITIES " .
+            "(TT_ID, CLASS_ID, PROF_ID, LENGTH, TYPE) " .
+            "VALUES ({$_SESSION['tt_id']}, $class_id, " .
+            "$prof_id, 1, '$act_type')";
+    }
+    echo "<p>$query</p>";
+    mysql_query($query)
+        or die ('Error on insert/update');
+    echo '<p>Inserted/Updated the new resource data</p>';
+    echo "<a href=\"newactivity.php\">";
+    echo "New activity...</a>";
+    echo "<p><a href=\"manage_tt.php\">";
+    echo "Timetable {$_SESSION['tt_name']}</a></p>";
+    echo '<p><a href="index.php">Main page</a></p>';
+    exit();
+}
+$conn = connect_to_db();
+if (isset($_GET['edit']))
+{
+    $act_id = $_GET['edit'];
+    $edit_input = "<input name=\"edit\" id=\"edit\"" .
+        " type=\"hidden\" value=\"$act_id\">";
+    $query = "SELECT * FROM ACTIVITIES WHERE ID=$act_id";
+    $result = mysql_query($query)
+        or die("Can't get activity");
+    $row = mysql_fetch_array($result, MYSQL_ASSOC);
+    $act_class = $row['CLASS_ID'];
+    $act_prof = $row['PROF_ID'];
+    $act_type = $row['TYPE'];
+    $selected = $act_type == 'MANDATORY' ? ' selected' : '';
+    $types_html = "<option$selected>MANDATORY</option>";
+    $selected = $act_type == 'DESIRABLE' ? ' selected' : '';
+    $types_html .= "<option$selected>DESIRABLE</option>";
+    $delete_link = 
+        "<p><a href=\"javascript:confirm_delete_activity($act_id)\">";
+    $delete_link .= "delete activity</a></p>";
+    $generator_link = "";
+    $submit = "Update";
+}
+else
+{
+    $act_class = -1;
+    $act_prof = -1;
+    $act_type = "";
+    $edit_input = "";
+    $types_html = "<option>MANDATORY</option>";
+    $types_html .= "<option>DESIRABLE</option>";
+    $delete_link = "";
+    $generator_link = 
+        "<a href=\"actgen.php\">use automatic generator</a><br><br>";
+    $submit = "Add";
+}
+$class_options = 
+    get_resources($_SESSION['tt_id'], 'CLASS', $act_class);
+$prof_options =
+    get_resources($_SESSION['tt_id'], 'PROF', $act_prof);
+$existing = "<h3>Existing activities:</h3>";
+$existing .= get_defined_activities($_SESSION['tt_id'], $conn);
+print<<<_H
+<h2>Timetable - {$_SESSION['tt_name']}</h2>
+<p>{$_SESSION['user_name']} is logged in.</p>
+$existing
+<h3>Activity data:</h3>
+$generator_link
+$delete_link
+<form method="post">
+<table>
+    <tr>
+        <td>Type</td>
+        <td><select name="type" id="type"
+            onchange="javascript:type_changed()">
+        $types_html
+        </select></td>
+    </tr>
+    <tr>
+        <td>Class</td>
+        <td><select name="class" id="class">
+        $class_options
+        </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Prof</td>
+        <td><select name="prof" id="prof">
+        $prof_options
+        </select>
+        </td>
+    </tr>
+    <tr>
+        <td><input name="add" id="add" type="submit" value="$submit"></td>
+        <td><input name="add" id="add" type="reset" value="Reset"
+        onclick="javascript:reset_type()">
+        $edit_input
+        </td>
+    </tr>
+</table>
+</form>
+<p><a href="manage_tt.php">Timetable {$_SESSION['tt_name']}</a></p>
+<p><a href="index.php">Main page</a></p>
+_H;
+?>

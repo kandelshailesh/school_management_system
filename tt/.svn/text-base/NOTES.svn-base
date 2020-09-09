@@ -1,0 +1,21 @@
+
+TO DO:
+-- Manage Timetables (delete, modify size)
+-- add validations (yuck, long and clerical task)
+-- urlencode GET stuff
+-- reset/revert for the resource availability editor
+-- clean up code
+-- OPTIMIZATION: when generating/creating/editing activities, set the ids of
+the resources as values for the options in selects, to avoid makeing that many
+queries when editing resources
+-- add class groups (groups that contain classes)
+-- add different length activities (right now all activities last 1 interval)
+-- check rooms by size when allocating
+-- modify the size for many resources at once
+-- modify the type and length for many activities at once
+-- more helpful error reporting (which activitiy/ies caused problems, and what
+could be done about it - in case of an error the old timetable is kept, if any)
+-- when tweaking a timetable, show the other affected timetable (if tweaking a
+prof's timetable show the class timetable for the class involved in the tweaked
+activity and the other way around)
+
